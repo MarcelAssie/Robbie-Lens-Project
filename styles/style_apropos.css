@@ -92,17 +92,20 @@
     .contenu2 {
         position: absolute;
         left: 0;
+
     }
+
     .about2 {
         width: 250px;
-        height: 250px;
+        height: auto;
+        margin-top: 0;
     }
     .about2 p, li{
-        font-size: 0.6em;
+        font-size: 0.8em;
         line-height: 2;
     }
     .about2 h2{
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
     .about1 {
         margin-left: 0;
