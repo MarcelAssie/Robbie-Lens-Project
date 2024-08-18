@@ -1,0 +1,142 @@
+.a-propos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    padding: 40px;
+    gap: 5px;
+/*    border: 2px solid blue;*/
+}
+.about-photos {
+    position: relative;
+    width: 1200px;
+/*    border: 2px solid yellow;*/
+}
+.photos-profile-group{
+    background-color:
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+    gap: 15px;
+    padding: 20px;
+/*    border: 2px solid red;*/
+}
+.photos-profile-group img{
+    width: 200px;
+    height: auto;
+}
+
+.box-img2 {
+    position: absolute;
+    width: 55%;
+    height: 75%;
+    right: 0;
+    border: 0;
+    background-color: rgba(165, 180, 252, 0.1);
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+/*    border: 2px solid red;*/
+}
+.about1 {
+    margin-left: -150px;
+    margin-top: 50px;
+    top: 30px;
+/*    border: 2px solid red;*/
+}
+.about2 {
+/*    border: 2px solid red;*/
+    width: 550px;
+    height: auto;
+    margin-top: 0px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+}
+.contenu1 {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.contenu2 {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid #A5B4FC;
+    border-bottom: 1px solid #A5B4FC;
+    z-index: 1;
+}
+.details.about3 {
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-photos {
+        display: none;
+    }
+    .a-propos {
+        max-width: 80%;
+        gap: 5px;
+    }
+    .a-propos h1{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .contenu2 {
+        position: absolute;
+        left: 0;
+    }
+    .about2 {
+        width: 250px;
+        height: 250px;
+    }
+    .about2 p, li{
+        font-size: 0.6em;
+        line-height: 2;
+    }
+    .about2 h2{
+        font-size: 0.9em;
+    }
+    .about1 {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .photos-profile-group{
+        background-color:
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .photos-profile-group img{
+        width: 150px;
+        height: auto;
+    }
+    .photos-profile-group img:nth-last-child(1) {
+        display: none;
+    }
+    .about-photos {
+        width: 100%;
+    }
+    .a-propos {
+        max-width: 80%;
+    }
+    .box-img2 {
+        position: absolute;
+        width: 55%;
+        height: 55%;
+        top: 0;
+        left: 0;
+    }
+}

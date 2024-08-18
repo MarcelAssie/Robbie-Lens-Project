@@ -1,0 +1,89 @@
+.portfolio-section-photos {
+    background-color: floralwhite;
+    margin: auto;
+}
+.portfolio-content {
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio-section-photos h2{
+    color: #242424;
+    margin: 0px 0 50px 0 ;
+    font-weight: 100px;
+}
+
+.grid-photos, .grid-portraits  {
+    display: grid;
+    grid-template-columns:  300px  300px  300px;
+    grid-template-rows: 200px  200px  200px;
+    gap: 50px;
+}
+
+
+.grid-portraits img, .grid-photos img {
+    width: 300px;
+    height: 200px;
+}
+.lien-photo-conteneur {
+   position: relative;
+}
+.box-photo {
+    position: absolute;
+    font-size: 1.5em;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0 , 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.lien-photo-conteneur:hover .box-photo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-photos, .grid-portraits  {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .portfolio-content {
+        margin-top: 0;
+    }
+    .portfolio-section-photos h2{
+        margin: 10px 0 20px 0 ;
+        left: 0;
+    }
+     .portfolio-section-photos {
+        padding: 20px
+    }
+    section {
+        padding: 10px;
+    }
+    section h1 {
+        margin-bottom: 0;
+        font-size: 1.5em;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid-photos, .grid-portraits  {
+        display: grid;
+        grid-template-columns:  300px  300px;
+        grid-template-rows: 200px  200px  200px 200px;
+        gap: 50px;
+    }
+}
